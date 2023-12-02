@@ -1,0 +1,23 @@
+{
+  "name": "blazeshopautomation",
+  "version": "1.0.0",
+  "description": "This is a personal project to show my skills with cypress and I would like to keep this project up to date for future reference and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testerai10x/BlazeShopAutomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/testerai10x/BlazeShopAutomation/issues"
+  },
+  "homepage": "https://github.com/testerai10x/BlazeShopAutomation#readme",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
