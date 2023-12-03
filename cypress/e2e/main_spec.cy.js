@@ -15,15 +15,6 @@ describe('API Interception', () => {
   })
 })
 
-
-
-
-
-
-
-
-
-
 describe('Testcase #1 Login', () => {
 
   beforeEach(function(){
@@ -39,6 +30,16 @@ describe('Testcase #1 Login', () => {
 
     cy.login(this.loginData.users.username, this.loginData.users.password)
     cy.get(this.loginData.users.name_user).should('be.visible')
+
+    cy.intercept('POST', 'https://api.demoblaze.com/check').as('getlogin')
+    cy.visit('https://www.demoblaze.com/index.html')
+    cy.wait('@getlogin').then((log => {  
+    cy.log(log)
+    expect(log.response.statusCode).to.eq(200)
+    expect(log.response.statusMessage).to.eq('OK')
+    expect(log.response.body.Item).to.have.property('username').to.equal('testx10')
+
+    }))
 
   })
 })
