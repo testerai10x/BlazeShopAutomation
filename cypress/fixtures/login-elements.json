@@ -1,0 +1,6 @@
+{
+  "username": "#loginusername",
+  "password": "#loginpassword",
+  "login_submit": "#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary",
+  "login_link": "#login2"
+}
