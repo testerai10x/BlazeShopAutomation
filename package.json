@@ -17,7 +17,7 @@
     "url": "https://github.com/testerai10x/BlazeShopAutomation/issues"
   },
   "homepage": "https://github.com/testerai10x/BlazeShopAutomation#readme",
-  "dependencies": {
-    "cypress": "^13.6.0"
+  "devDependencies": {
+    "cypress": "^13.6.2"
   }
 }
